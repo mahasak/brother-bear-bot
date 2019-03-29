@@ -34,4 +34,4 @@ jobs:
           key: v1-dependencies-{{ checksum "./functions/package.json" }}
 
       # run tests!
-      - run: cd function && npm test
+      - run: cd functions && npm test
