@@ -36,4 +36,5 @@ jobs:
       # run tests!
       - run: cd functions && npm test
       - store_test_results:
-          path: test-results
+          path: junit.xml
+
