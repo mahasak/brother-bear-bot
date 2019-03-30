@@ -1,0 +1,10 @@
+steps:
+- name: 'gcr.io/cloud-builders/npm:node-6.14.4'
+  args: [ 'install' ]
+- name: 'gcr.io/brother-bear-bot/firebase'
+  args: [ 'deploy', '--project', 'brother-bear-bot']
+  secretEnv: ['FIREBASE_TOKEN']
+secrets:
+- kmsKeyName: projects/brother-bear-bot/locations/global/keyRings/brother-bear-bot-keyring/cryptoKeys/brother-bear-bot-token
+  secretEnv:
+    FIREBASE_TOKEN: CiQApjwCwctJkd5HAShxh/eIcQWVwQHrgfYZMWSyhphyiKTzM8wSVgBKOkwc0LlP6rZNrpUgnCpmJ0CpNDM88ac9xE2xgF7D5v1d2ZHXvswfLqa5+OEGe+p/nfhHXqkAmuR1YLAxyX3nckBgsG5vqIUjimRV5tVyOsxYumSq

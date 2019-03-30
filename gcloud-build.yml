@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'gcr.io/brotherbearbot/firebase', '.' ]
+  args: [ 'build', '-t', 'gcr.io/brother-bear-bot/firebase', '.' ]
 images:
-- 'gcr.io/brotherbearbot/firebase'
+- 'gcr.io/brother-bear-bot/firebase'
