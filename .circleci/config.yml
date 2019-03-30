@@ -39,5 +39,5 @@ jobs:
           path: junit.xml
 
       # deploy
-      - run: firebase deploy --project $PROJECT_ID --token=$FIREBASE_TOKEN --only functions
+      - run: cd functions && ./node_modules/.bin/firebase deploy --project $PROJECT_ID --token=$FIREBASE_TOKEN --only functions
 
