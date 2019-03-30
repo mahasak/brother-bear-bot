@@ -5,5 +5,5 @@ const functions = require('firebase-functions');
 //
 
 exports.helloWorld = functions.https.onRequest((request, response) => {
-  response.send("Hello from Firebase-Gcloud!");
+  response.send("Deploy from Push to Functions !");
 });
