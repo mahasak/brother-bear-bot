@@ -38,3 +38,6 @@ jobs:
       - store_test_results:
           path: junit.xml
 
+      # deploy
+      - run: cd functions && ./node_modules/.bin/firebase deploy --project $PROJECT_ID --token=$FIREBASE__TOKEN --only functions
+
